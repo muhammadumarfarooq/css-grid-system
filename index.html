@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS3 Grid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+      Flexbox is one dimentional and the Grid system is two dimentional.
+      Use grid for outer elements e.g boxes etc and use flex for simple alignment e.g inner elements like menu elements.
+
+      ===== GRID BASICS =====
+      *** display: grid; ***
+      ===== GRID COLUMNS =====
+      *** grid-template-columns: 2px 2px 2px ***  ==> how many columns we want and width of the columns px, auto ==> to fill all the space, rem, %age fr (mostly used) etc.
+      if repetation then use 
+      *** repeat(2px, 12) ***
+      ===== GRID GAP =====
+      *** grid-gap: 1rem; ***
+      ===== GRID ROWS =====
+      *** grid-template-rows: 1fr 2fr 3fr; ***
+      it apply on 1st three rest of them remain by default.To change rest use 
+      *** grid-auto-row: 3fr; ***
+      ===== SPANNING COLUMNS AND ROWS =====
+       *** grid-column-start: 1; ***
+       *** grid-column-end: 3; ***
+       *** grid-row-start: 1; ***
+       *** grid-row-end: 3; ***
+       ===== AUTO FIT AND MINMAX ====
+       make our grid responsive. good for media gallary and not for others.
+       *** grid-template-columns: repeat: repeat(auto-fit, minmax(300px, 1fr)); ***
+       ===== GRID TEMPLATE AREAS =====
+      apply on parent ==> grid-template-areas
+      apply on children ==> grid-template
+      ===== MEDIA QUARIES AND THE GRID ===== 
+      760px tablet size
+      500px mobile size
+     -->
+    <!-- <h1>CSS3 Grid</h1>
+    <div class="grid">
+      <div class="item">item 1</div>
+      <div class="item">item 2</div>
+      <div class="item">item 3</div>
+      <div class="item">item 4</div>
+      <div class="item">item 5</div>
+      <div class="item">item 6</div>
+      <div class="item">item 7</div>
+      <div class="item">item 8</div>
+      <div class="item">item 9</div>
+      <div class="item">item 10</div>
+      <div class="item">item 12</div>
+      <div class="item">item 13</div>
+      <div class="item">item 14</div>
+      <div class="item">item 15</div>
+    </div> -->
+    <!-- 
+    <main>
+      <section>
+        <h1>Something go here...</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+          repellat esse eum qui, tempore velit saepe magni est nostrum
+          accusantium sit iure explicabo a. Repellendus explicabo aspernatur
+          adipisci unde quo velit soluta quis a assumenda tempora dolorum earum
+          deserunt vel sapiente nemo, repudiandae cupiditate illum repellat.
+          Nesciunt commodi recusandae, eos aperiam obcaecati quo quae officiis
+          odit amet minima corrupti dicta?
+        </p>
+      </section>
+      <aside>
+        <h3>My data</h3>
+        <ul>
+          <li>Noodels</li>
+          <li>Cookies</li>
+          <li>Pastas</li>
+          <li>Micoroni</li>
+        </ul>
+      </aside>
+    </main> -->
+    <!-- <div class="container">
+      <header class="header">
+        <h1>My website</h1>
+      </header>
+      <section class="content">
+        <h3>Welcome to my Website</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa nihil
+          itaque tempore iste ab ex. Laudantium nihil voluptas laborum facilis
+          perspiciatis beatae! Veritatis, quia error. Veniam eius illum ducimus
+          cum ullam repellendus eos, repudiandae aliquam? Eaque in odit
+          architecto deserunt?
+        </p>
+      </section>
+      <aside class="sidebar">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+        </ul>
+      </aside>
+      <div class="box-1">
+        <h3>Something</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+          corporis numquam alias praesentium vel aut minus suscipit iure, enim
+          incidunt.
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>Something</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+          corporis numquam alias praesentium vel aut minus suscipit iure, enim
+          incidunt.
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>Something</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
+          corporis numquam alias praesentium vel aut minus suscipit iure, enim
+          incidunt.
+        </p>
+      </div>
+      <footer class="footer">
+        <p>Copyright &copy; 2019</p>
+      </footer>
+    </div>
+     -->
+    <container class="grid">
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          provident molestias non ea et repellat. Commodi amet blanditiis odit.
+          Possimus.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+          sapiente commodi consequuntur nemo voluptate eum, reiciendis eligendi
+          explicabo reprehenderit porro.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempore
+          fugit commodi iste explicabo ad culpa beatae cupiditate et laborum?
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempore
+          fugit commodi iste explicabo ad culpa beatae cupiditate et laborum?
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempore
+          fugit commodi iste explicabo ad culpa beatae cupiditate et laborum?
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempore
+          fugit commodi iste explicabo ad culpa beatae cupiditate et laborum?
+        </p>
+      </div>
+    </container>
+  </body>
+</html>
